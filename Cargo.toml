@@ -2,6 +2,7 @@
 name = "rocket-app"
 version = "0.1.0"
 authors = ["vkotsiuba99"]
+publish = false
 
 [dependencies]
 rocket = "*"
