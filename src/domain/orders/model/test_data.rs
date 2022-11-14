@@ -1,4 +1,8 @@
-use crate::domain::{customers::model::test_data::default_customer, orders::*, products::*};
+use crate::domain::{
+    customers::model::test_data::default_customer,
+    orders::*,
+    products::*,
+};
 
 pub fn default_order() -> Order {
     Order::new(NextOrderId::new(), &default_customer()).unwrap()
@@ -8,7 +12,7 @@ pub struct OrderBuilder {
     order: Order,
     line_items: Vec<(
         Product,
-        Box<Fn(OrderLineItemBuilder) -> OrderLineItemBuilder>,
+        Box<dyn Fn(OrderLineItemBuilder) -> OrderLineItemBuilder>,
     )>,
 }
 
