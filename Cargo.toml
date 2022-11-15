@@ -1,5 +1,5 @@
 [package]
-name = "rocket-app"
+name = "shop"
 version = "0.1.0"
 authors = ["vkotsiuba99"]
 publish = false
