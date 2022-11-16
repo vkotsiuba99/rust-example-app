@@ -38,6 +38,9 @@ cargo doc --document-private-items
  #[macro_use]
  extern crate auto_impl;
  
+ #[macro_use]
+ extern crate async_trait;
+ 
  pub mod api;
  pub mod domain;
  pub mod logger;
