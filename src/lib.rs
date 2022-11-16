@@ -16,32 +16,31 @@ cargo doc --document-private-items
 ```
  */
 
- #![feature(decl_macro)]
  #![allow(
-     clippy::manual_non_exhaustive,
-     clippy::type_complexity,
-     clippy::nonstandard_macro_braces
- )]
- 
- #[macro_use]
- extern crate rocket;
- 
- #[macro_use]
- extern crate serde_derive;
- 
- #[macro_use]
- extern crate thiserror;
- 
- #[macro_use]
- extern crate log;
- 
- #[macro_use]
- extern crate auto_impl;
- 
- #[macro_use]
- extern crate async_trait;
- 
- pub mod api;
- pub mod domain;
- pub mod logger;
- pub mod store;
+    clippy::manual_non_exhaustive,
+    clippy::type_complexity,
+    clippy::nonstandard_macro_braces
+)]
+
+#[macro_use]
+extern crate rocket;
+
+#[macro_use]
+extern crate serde_derive;
+
+#[macro_use]
+extern crate thiserror;
+
+#[macro_use]
+extern crate log;
+
+#[macro_use]
+extern crate auto_impl;
+
+#[macro_use]
+extern crate async_trait;
+
+pub mod api;
+pub mod domain;
+pub mod logger;
+pub mod store;
